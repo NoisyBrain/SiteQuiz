@@ -1,0 +1,40 @@
+header{border-bottom: 1px solid #80808049;}
+
+.menu{display: flex; justify-content: space-between; align-items: center;}
+
+nav{width: 35%;}
+
+ul{list-style: none;}
+
+h1#logo_name{font-family: 'Montserrat'; margin-left: 10%;}
+
+a{font-family: Helvetica, sans-serif; text-decoration: none;}
+
+/* Smartphone */
+@media only screen and (max-width: 569px){
+    header.menu{display: block;}
+
+    div#logo, nav.menu{justify-content:center;}
+
+    ul.menu{padding-left: 0;}
+
+    nav{width: 90%; margin-left: auto; margin-right: auto;}
+
+    a{font-size: 14px;}
+
+}
+/* Tablet */
+@media only screen and (min-width: 570px){
+    div#logo img{width: 40px;height: 40px;}
+
+    h1#logo_name{font-size: 25px;}
+          
+    nav{width:70%;}   
+}
+
+/* Monitores */
+@media only screen and (min-width: 769px){
+    div#logo img{width: 50px; height: 50px;}
+
+    nav{width: 50%;}
+}

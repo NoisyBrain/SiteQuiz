@@ -1,0 +1,98 @@
+main{margin: 0 5%; padding-bottom: 5%;}
+
+h1#title_session{line-height: 48px; font-size: 40px; font-family: 'Montserrat'; text-align: left;}
+
+p#subtitle{font-family: 'Roboto'; font-size: 16px; width: 60%;}
+
+.reaserch{height: 56px; border-radius: 4px; border: none; box-shadow: 1px 2px 5px gray;}
+
+div#reaserch{ padding: 5% 0; border-bottom: 1px solid rgba(128, 128, 128, 0.445); border-top: 1px solid rgba(128, 128, 128, 0.445); outline:none;}
+
+div#reaserch button{ margin-left: 20px; width: 150px; cursor: pointer;}
+
+p#resultados{font-family: 'Roboto';}
+
+div#courses ul{padding: 0;}
+
+div#courses ul li{border-top-left-radius: 5px; border-top-right-radius: 5px; line-height: 10px; margin: 0 auto; box-sizing: border-box; position: relative; }
+
+.background{border-top-left-radius: 5px; border-top-right-radius: 5px; width: 100%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
+
+.teacher_photo{display: none; position: absolute; left: 50%; transform: translateX(-50%);}
+
+.description{padding: 5%;}
+
+.description h5{width: 100%; font-family: 'Montserrat'; line-height: 28px; font-size: 20px; margin: 0;}
+
+.description p{line-height: 20px;}
+
+.scheme{display: flex; justify-content: space-around; margin-bottom: 5%; font-family: 'Roboto'; font-size: 16px;}
+
+.scheme p{display: flex; align-items: center; margin-top: 10px;}
+
+.btn{display: flex; justify-content: space-around; align-items: center;}
+
+.card_curso_description_btn {font-family:"Roboto";text-align: center; width: 104px; height: 44px; line-height: 44px;border: #6E41E2  1px solid; border-radius: 4px; background-color: #FFFFFF; cursor: pointer;}
+
+.card_curso_description_a{cursor: pointer;}
+
+.descricao{display: none;}
+
+.show_descricao{display: ''; font-family:'Roboto'; line-height: 18px;}
+
+@media only screen and (min-width: 360px){ 
+    h1#title_session{width: 100%; text-align: center;} 
+    
+    p#subtitle{width: 100%; text-align: left;}
+
+    div#reaserch{display: block; text-align: center;}
+    
+    input#reaserch_bar{padding: 3%; width: 100%; margin-bottom: 5%;}
+
+    div#reaserch button{margin-left: 0;}
+
+    div#courses p#resultados{margin-left: 5%;}
+
+    div#courses ul li{width: 90%; box-shadow: 1px 2px 5px gray; border-radius: 5px;  margin-bottom: 5%;}
+
+    .description h5{font-size: 15px;}
+
+    .scheme{font-size: 12px;}
+}
+
+@media only screen and (min-width: 600px){
+    h1#title_session{width: 100%; text-align: center;} 
+
+    p#subtitle{width: 100%; text-align: center;}
+
+    div#reaserch{display: flex; justify-content: space-between;}
+    
+    input#reaserch_bar{padding: 1%; width: 81%; margin-bottom: 0;}
+
+    div#reaserch button{width: 18%;}
+
+    div#courses p#resultados{margin-left: 0;}
+
+    div#courses ul{display: grid; grid-template-columns: 1fr 1fr; column-gap: 2%; margin: 0;}
+
+    div#courses ul li{ width: 100%; box-shadow: 1px 2px 5px gray; border-radius: 5px;}
+
+    .scheme p{font-size: 12px;}
+}
+
+@media only screen and (min-width: 1000px){
+    h1#title_session{width: 50%; text-align: left;}
+
+    p#subtitle{width: 50%; text-align: left;} 
+
+    div#courses p#resultados{margin-left: 0;}
+
+    div#courses ul{grid-template-columns: 1fr 1fr 1fr;}
+}
+
+
+
+
+
+
+

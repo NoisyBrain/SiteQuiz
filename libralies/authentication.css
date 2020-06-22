@@ -1,0 +1,61 @@
+.container{width: 50%; background-color: #fafafa; border-radius: 10px; margin: auto; padding: 3%; font-family: 'Roboto'; box-shadow: 2px 2px 5px gray; color: rgb(12, 12, 12);}
+
+header h2{font-size: 30px; font-family: 'Montserrat';}
+
+header nav ul{display: flex; margin: 0; padding: 0;}
+
+header nav ul li{padding: 3% 0; height: 50px;}
+
+header nav ul li a{color: rgb(12, 12, 12);}
+
+header nav ul li a:hover{color:purple;}
+
+.onPage{border-bottom: 1px solid rgba(245, 84, 84, 0.767);}
+
+header nav ul li:last-child{margin-left: 7%}
+
+header div#social_signIn{display: flex; justify-content: space-between; margin: 0 0 5% 0; border-bottom: 1px solid rgba(128, 128, 128, 0.493);  border-top: 1px solid rgba(128, 128, 128, 0.493); padding: 3% 3% 3% 0; }
+
+header div#social_signIn div#icons img{margin-left: 10px;}
+
+main form input{display: block; margin-bottom: 2%; width: 100%; height: 46px; padding: 1%; border: none; border-radius: 5px; box-shadow: -1px 2px 5px gray;}
+
+main div#contract {display: grid; grid-template-columns: 1fr 15fr; align-items: center;}
+
+main div#contract h4{font-size: 14px;}
+
+main form div#contract input{width:19px; box-shadow: none;}
+
+a#remind{font-size: 12px;}
+
+footer{text-align: center; margin-top: 3%;}
+
+.btn{width: 100px; height: 46px; border: 1px solid purple; border-radius: 10px; background-color: transparent; color: purple; box-shadow: 2px 2px 5px gray; cursor: pointer;}
+
+.btn:hover{background-color: purple; color: #fafafa; transition: 0.2s ease;}
+
+.erroValidation{animation: erro 0.5s; border:1px solid rgba(255, 0, 0, 0.377);}
+
+.sucessValidation{border:1px solid rgba(90, 238, 90, 0.781);}
+
+div.msg_erro{display:grid ; align-items: center; background-color: whitesmoke; width: 350px;left: 50%; transform: translateX(-50%); position: absolute; top: 40vh; height: 150px; text-align: center; border-radius: 10px; font-family: 'Roboto'; box-shadow: -1px 2px 5px gray;}
+
+div.msg_erro button{margin: 0 auto;}
+
+div#msg_sucesso{background-color: whitesmoke; width: 50%; left: 50%; transform: translateX(-50%); position: absolute; top: 50vh; height: 150px; text-align: center; border-radius: 10px; font-family: 'Roboto';box-shadow: -1px 2px 5px gray;}
+
+
+@keyframes erro{ 0%{ transform: translateX(0);} 35%{ transform: translateX(-15%);} 70%{ transform: translateX(15%);} 100%{ transform: translateX(0);}}
+
+@media only screen and (min-width: 360px){
+    .container{width: 90%;}
+}
+
+@media only screen and (min-width: 620px){
+    .container{width: 70%;}
+    div#contract h4{margin-left: 1%;}
+
+}
+@media only screen and (min-width: 820px){
+    .container{width: 50%;}
+}
